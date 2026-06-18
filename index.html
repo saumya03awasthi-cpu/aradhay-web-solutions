@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aradhay Web Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111827;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#0f172a,#1d4ed8);
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+font-size:20px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+background:#38bdf8;
+color:#000;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+font-weight:600;
+cursor:pointer;
+}
+
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.about{
+text-align:center;
+max-width:900px;
+margin:auto;
+line-height:2;
+font-size:18px;
+}
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+}
+
+.contact{
+max-width:700px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+}
+
+footer{
+background:#020617;
+padding:30px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Aradhay Web Solutions</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+
+<h1>Build Your Digital Presence</h1>
+
+<p>
+We create modern, responsive and professional websites
+for businesses, startups and personal brands.
+</p>
+
+<button class="btn">Get Free Consultation</button>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<p>
+Aradhay Web Solutions helps businesses establish a strong
+online presence through professional web development.
+We focus on creating beautiful, fast and responsive websites
+that help clients attract more customers and grow online.
+</p>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Business Websites</h3>
+<p>Professional websites for companies and local businesses.</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Websites</h3>
+<p>Personal portfolio websites for students and professionals.</p>
+</div>
+
+<div class="card">
+<h3>Landing Pages</h3>
+<p>High-converting landing pages for marketing campaigns.</p>
+</div>
+
+<div class="card">
+<h3>Website Redesign</h3>
+<p>Upgrade old websites with modern UI and better performance.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2 class="title">Portfolio</h2>
+
+<div class="portfolio">
+
+<div class="project">
+<h3>Restaurant Website</h3>
+<p>Modern restaurant design with online booking system.</p>
+</div>
+
+<div class="project">
+<h3>Gym Website</h3>
+<p>Fitness club website with membership plans.</p>
+</div>
+
+<div class="project">
+<h3>Safety Consultancy</h3>
+<p>Corporate safety services website with professional design.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<div class="contact">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<a href="https://wa.me/917985162488">
+    <button class="btn">Send Message</button>
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Aradhay Web Solutions</h3>
+
+<p>Building Websites That Grow Your Business</p>
+
+<br>
+
+<p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
